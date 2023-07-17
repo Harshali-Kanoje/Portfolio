@@ -56,6 +56,10 @@ section{
     align-items: center;
 }
 
+.home-content{
+    width: 50vw;
+}
+
 .home-content h3{
     font-size: 22px;
     font-weight: bold;
@@ -75,22 +79,46 @@ section{
     margin-bottom: 20px;
 }
 .icons a{
+    color: blueviolet;
+    background-color: black;
 font-size: 30px;
 margin: 10px 10px 10px 0;
-/* border: 2px solid blueviolet;
+border: 2px solid blueviolet;
 background-color: transparent;
 border-radius: 50%;
 display: inline-flex;
 justify-content: center;
 align-items: center;
-height: 50px;
-width: 50px; */
-border: none;
+height: 45px;
+width: 45px;
+transition: .5s;
 }
 
 .icons a:hover{
 background-color: blueviolet;
 color: black;
+box-shadow: 0 0 3px 2px blueviolet;;
+}
+
+.d-btn {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    display: inline-block;
+    width: 200px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 0 2px 2px blueviolet;;
+    transition: .5s;
+}
+
+.d-btn:hover {
+box-shadow: none;
+}
+.d-btn a{
+    font-size: 15px;
 }
 .image img{
     border-radius: 0 50%;
