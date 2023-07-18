@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(39, 36, 36);
+    background-color: rgb(46, 44, 44);
     padding: 20px 90px;
     z-index: 100;
 }
@@ -44,7 +44,7 @@ display: none;
 
 .navbar a:hover,
 .navbar a.active {
-    color: blueviolet;
+    color: rgb(138, 43, 226);
 }
 
 section{
@@ -67,7 +67,7 @@ section{
 }
 
 .home-content h1{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -122,4 +122,34 @@ box-shadow: none;
 }
 .image img{
     border-radius: 0 50%;
+}
+
+.about{
+    background-color: rgb(32, 30, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content{
+    width: 60vw;
+    margin-left: 60px;
+}
+
+.about-content h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content h2 span{
+    color: blueviolet;
+}
+
+.about-content h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-content p{
+    margin-bottom: 10px;
 }
