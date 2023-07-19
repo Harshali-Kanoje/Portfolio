@@ -189,6 +189,53 @@ border: 3px solid blueviolet;
 margin: 10px 0;
 }
 
-/* .service-card a{
-    font-size: 50px;
-} */
+.portfolio{
+    text-align: center;
+    background-color: rgb(56, 53, 53);
+    color: white;
+}
+
+.portfolio h1{
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.portfolio-content{
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: center;
+}
+.portfolio span{
+    color: blueviolet;
+}
+
+.portfolio-card{
+    width: 350px;
+    display: inline-block;
+    margin: 0 20px;
+    border-radius: 10px;
+    background-color: rgb(78, 75, 75);
+    padding: 20px;
+    box-shadow: 0 0 6px rgb(46, 45, 45);
+}
+
+.portfolio-card img{
+    width: 100%;
+    margin: 10px 0;
+    height: 233px;
+    
+}
+
+.content{
+    text-align: center;
+}
+
+.content h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.content p{
+    font-size: 16px;
+    margin: 10px 0;
+}
