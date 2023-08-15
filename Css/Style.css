@@ -189,10 +189,15 @@ border: 3px solid blueviolet;
 margin: 10px 0;
 }
 
+.color{
+    color: blueviolet;
+}
+
 .portfolio{
     text-align: center;
-    background-color: rgb(56, 53, 53);
+    background-color: rgb(32, 30, 30);
     color: white;
+    padding: 0 80px
 }
 
 .portfolio h1{
@@ -201,41 +206,71 @@ margin: 10px 0;
 }
 
 .portfolio-content{
-    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    align-items: center;
     /* flex-direction: row; */
-    text-align: center;
+    /* text-align: center; */
 }
 .portfolio span{
     color: blueviolet;
 }
 
 .portfolio-card{
-    width: 350px;
-    display: inline-block;
-    margin: 0 20px;
     border-radius: 10px;
-    background-color: rgb(78, 75, 75);
-    padding: 20px;
     box-shadow: 0 0 6px rgb(46, 45, 45);
+    position: relative;
+  
 }
 
 .portfolio-card img{
     width: 100%;
-    margin: 10px 0;
-    height: 233px;
     
+    height: 233px; 
+    transition: .5s;
+    border-radius: 10px;
 }
 
-.content{
-    text-align: center;
+.portfolio-card img:hover{
+    
+    translate: scale(1.1);
 }
 
+ .content{
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,1),blueviolet);
+    height: 100%; 
+    transform: scaleY(100%);
+    border-radius: 10px;
+}
+
+.portfolio-card:hover content{
+    transform: scaleY(0%);
+}
 .content h4{
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px 0;
 }
 
 .content p{
     font-size: 16px;
     margin: 10px 0;
+}
+
+.content a{
+    height: 60px;
+    width: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
 }
