@@ -4,19 +4,19 @@
 Here is the overwiew of each parts.
 
 ## Navigation Section
-![HomePage](./images/navigation-page.png)
+![Navigation Page](./Images/navigation-page.png)
 
 ## About Section
-![HomePage](./images/about-page.png)
+![About Page](./images/about-page.png)
 
 ## Skill Section
-![HomePage](./images/skills-page.png)
+![Skill Page](./images/skills-page.png)
 
 ## Project Section
-![HomePage](./images/project-page.png)
+![Project Page](./images/project-page.png)
 
 ## Contact Section
-![HomePage](./images/contact-page.png)
+![Contact Page](./images/contact-page.png)
 
 ### Please visit my Portfolio
 [visit here](https://sports-glx.netlify.app/)
