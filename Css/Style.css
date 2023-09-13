@@ -3,51 +3,57 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: rgb(46, 44, 44);
+
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(46, 44, 44);
-    padding: 20px 90px;
     z-index: 100;
+    background-color: rgb(46, 44, 44);
+    color: white;
 }
+ 
 
-.logo {
+.navbar-brand {
     color: white;
     font-size: 30px;
     font-weight: bold;
     /* padding-left: 76px; */
 }
 
-.fa-solid{
-color: white;
-display: none;
+.navbar-toggler{
+    background-color: white;
 }
+/* 
+.fa-solid {
+    color: white;
+    display: none;
+}
+*/
 
-.navbar a {
+
+.on,
+.nav-link:hover
+ {
+    color: rgb(138, 43, 226) !important;
+}  
+
+.nav-link {
     font-size: 18px;
     margin-left: 50px;
-    color: white;
+    color: white !important;
     font-weight: bold;
 }
 
-
-.navbar a:hover,
-.navbar a.active {
-    color: rgb(138, 43, 226);
-}
-
-section{
+section {
     padding: 90px;
     min-height: 100vh;
     display: flex;
@@ -56,48 +62,50 @@ section{
     align-items: center;
 }
 
-.home-content{
+.home-content {
     width: 50vw;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 35px;
     font-weight: bold;
 }
 
-.home-content h3 span{
+.home-content h3 span {
     color: blueviolet;
 }
 
-.home-content p{
+.home-content p {
     margin-bottom: 20px;
 }
-.icons a{
+
+.icons a {
     color: blueviolet;
     background-color: black;
-font-size: 30px;
-margin: 10px 10px 10px 0;
-border: 2px solid blueviolet;
-background-color: transparent;
-border-radius: 50%;
-display: inline-flex;
-justify-content: center;
-align-items: center;
-height: 45px;
-width: 45px;
-transition: .5s;
+    font-size: 30px;
+    margin: 10px 10px 10px 0;
+    border: 2px solid blueviolet;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    transition: .5s;
 }
 
-.icons a:hover{
-background-color: blueviolet;
-color: black;
-box-shadow: 0 0 3px 2px blueviolet;;
+.icons a:hover {
+    background-color: blueviolet;
+    color: black;
+    box-shadow: 0 0 3px 2px blueviolet;
+    ;
 }
 
 .d-btn {
@@ -110,189 +118,210 @@ box-shadow: 0 0 3px 2px blueviolet;;
     width: 200px;
     margin-top: 15px;
     text-align: center;
-    box-shadow: 0 0 2px 2px blueviolet;;
+    box-shadow: 0 0 2px 2px blueviolet;
+    ;
     transition: .5s;
 }
 
 .d-btn:hover {
-box-shadow: none;
-}
-.d-btn a{
-    font-size: 15px;
-}
-.image img{
-    border-radius: 0 50%;
+    box-shadow: none;
 }
 
-.about{
+.d-btn a {
+    font-size: 15px;
+}
+
+.image {
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.img-container{
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(50% 0, 100% 22%, 100% 74%, 51% 100%, 0 76%, 0 23%);
+    position: absolute;
+}
+.img-container img {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.border{
+    position: absolute;
+    height: 103%;
+    width: 103%;
+    top: -6px;
+    left: -5px;
+    background-color: blueviolet;
+    clip-path: polygon(50% 0, 100% 22%, 100% 74%, 51% 100%, 0 76%, 0 23%);
+}
+.about {
     background-color: rgb(32, 30, 30);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.about-content{
+.about-content {
     width: 60vw;
     margin-left: 60px;
 }
 
-.about-content h2{
+.about-content h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.about-content h2 span{
+.about-content h2 span {
     color: blueviolet;
 }
 
-.about-content h3{
+.about-content h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.about-content p{
+.about-content p {
     margin-bottom: 10px;
 }
 
-.Services{
+.Services {
     flex-direction: column;
 }
 
-.Services h1{
+.Services h1 {
     font-size: 35px;
 }
 
-.Services h1 span{
+.Services h1 span {
     color: blueviolet;
 }
 
-.service-content{
+.service-content {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.service-content .service-card{
+.service-content .service-card {
     height: 300px;
     width: 320px;
     background-color: rgba(67, 65, 65, 0.534);
-    margin: 0 15px;
+    margin: 10px 15px;
     border-radius: 15px;
     text-align: center;
     padding: 15px;
-   transition: .5s ease;
+    transition: .5s ease;
 }
 
-.service-content .service-card:hover{
-border: 3px solid blueviolet;
- transform: scale(1.02);
-}
-.service-card h2{
-margin: 10px 0;
+.service-content .service-card:hover {
+    border: 3px solid blueviolet;
+    transform: scale(1.02);
 }
 
-.color{
+.service-card h2 {
+    margin: 10px 0;
+}
+
+.color {
     color: blueviolet;
 }
 
-.portfolio{
+.portfolio {
     width: 100vw;
     background-color: rgb(32, 30, 30);
     color: white;
     padding: 0 80px
 }
 
-.portfolio h1{
+.portfolio h1 {
     font-size: 35px;
     margin: 20px 0;
     text-align: center;
 }
 
-.portfolio-content{
+.portfolio-content {
     /* display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     align-items: center;
     transition: .5s ease; */
     display: flex;
-    width:100%;
+    /* width: 100%; */
     justify-content: space-evenly;
-   
-}
-.portfolio span{
-    color: blueviolet;
-}
-
-.portfolio-card{
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgb(46, 45, 45);
-    position: relative;
-   
-
-    width: 25vw;
-    height: 248px;
-    background-color: white;
-    overflow: hidden;
-    
-   
+    flex-wrap: wrap;
   
 }
 
-.portfolio-img{
-       width: 100%;
-    height: 100%; 
+.content{
+    margin-top: 52px;
+}
+
+.portfolio span {
+    color: blueviolet;
+}
+
+.portfolio-card {
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(46, 45, 45);
+    position: relative;
+    width: 384px;
+    height: 248px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     transition: .5s ease;
     border-radius: 10px;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
 }
 
-.portfolio-card:hover .portfolio-img{
-    
+.portfolio-card:hover .portfolio-img {
     transform: scale(1.1);
 }
-.portfolio-card .content{
-   
+
+.portfolio-card .content {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.7),blueviolet);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), blueviolet);
     position: absolute;
-    
-   
     border-radius: 10px;
     bottom: 0;
-    transition:  height .5s ;
+    transition: height .5s;
     text-align: center;
     /* padding-top: 40px; */
-
 }
-/* .content1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: 1s;
-   display: none;
-  
-} */
-.portfolio-card:hover .content{
-   height: 100%;
+
+
+.portfolio-card:hover .content {
+    height: 100%;
 
 }
 
 
 
-.content h4{
+.content h4 {
     font-size: 30px;
     margin: 40px 0 0 0;
 }
 
-.content p{
+.content p {
     font-size: 16px;
-    margin: 10px 0 0 0 ;
+    margin: 10px 0 0 0;
 }
 
-.content a{
+.content a {
     height: 60px;
     width: 60px;
     display: inline-flex;
@@ -303,40 +332,65 @@ margin: 10px 0;
     margin: 15px 0 0 0;
 }
 
-.Contact{
+/* contact section */
+
+.Contact {
     flex-direction: column;
 }
 
-.contact-form{
+.contact-form {
     padding: 40px;
     border-radius: 20px;
     border: 2px solid blueviolet;
 }
 
-.contact-form input{
+.contact-form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    width: 300px;
+}
+
+.contact-form textarea {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid blueviolet;
     margin: 10px;
-    background-color: transparent;
-    color: white;
-    font-size: 17px;
-}
-
-.contact-form textarea{
-     padding: 10px;
-    border-radius: 10px;
-    border: 2px solid blueviolet;
-    margin: 10px; 
-    width: 95%;
+    width: 615px;
     margin: 10px;
     background-color: transparent;
     color: white;
     font-size: 17px;
 }
 
-.contact-form submit{
-background-color: blueviolet;
-color: wheat;
+.contact-form submit {
+    background-color: blueviolet;
+    color: wheat;
 }
+
+@media screen and (max-width:600px) {
+
+    .home {
+       flex-direction: column;
+    }
     
+    .portfolio {
+        padding: 0;
+    }
+
+    .portfolio-card {
+        margin: 20px;
+    }
+
+    .content{
+        margin-top: 0;
+    }
+    
+    section {
+        padding: 10px;
+    }
+}

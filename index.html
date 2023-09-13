@@ -8,12 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./Css/Style.css">
 </head>
 
 <body>
-    <div class="header">
-        <a href="" class="logo">Portfolio</a>
+    <!-- <div class="header"> -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active on" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <a href="" class="logo">Portfolio</a>
         <i class="fa-solid fa-bars"></i>
         <nav class="navbar">
             <a href="" class="active">Home</a>
@@ -21,28 +49,32 @@
             <a href="#Services">Services</a>
             <a href="">Portfolio</a>
             <a href="">Contact</a>
-        </nav>
-    </div>
+        </nav> -->
+    <!-- </div> -->
     <section class="home">
         <div class="home-content">
             <h3>Hello ,It's me</h3>
             <h1>Harshali Kanoje</h1>
             <h3>and I am <span>Frontend Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis assumenda nulla facilis
-                illum, consequuntur nisi vitae, repellendus maxime asperiores mollitia earum atque ipsam in tenetur
-                eligendi sequi et deserunt.</p>
+            <p> I work as a Frontend developer, and I really like coding to create websites. I've built web projects using HTML, CSS, JavaScript, and Bootstrap. I enjoy making websites that are useful and easy for people to use. I'm excited about making functional and user-friendly applications. You can also connect with me on the links below and grab my CV to learn more about me.</p>
             <div class="icons">
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harshali-kanoje/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Harshali-Kanoje"><i class="fa-brands fa-github"></i></a>
             </div>
 
             <a href="" class="d-btn">Download CV</a>
 
         </div>
         <div class="image">
-            <img src="./Images/Harshali.jpg" alt="MyImage" height="400px">
+            <div class="border">
+                
+            </div>
+            <div class="img-container">
+                <img src="./Images/Harshali.jpg" alt="MyImage" height="400px">
+            </div>
+            
         </div>
     </section>
 
@@ -160,7 +192,7 @@
 
             </div>
         </div>
-        <div class="portfolio-content" style="margin-top: 52px;">
+        <div class="portfolio-content content">
 
             <div class="portfolio-card">
                 <img src="./Images/Laptop5.jpg" alt="" class="portfolio-img">
@@ -230,6 +262,8 @@
             <input type="submit" value="Send Message" class="submit">
         </form>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
