@@ -231,6 +231,51 @@ section {
     color: blueviolet;
 }
 
+/* skill section */
+.skills{
+background-color: rgb(46 44 44);
+color: white;
+padding: 90px;
+}
+
+.Skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 680px; */
+}
+
+.colunm{
+    border: 2px solid blueviolet;
+    padding: 20px;
+  width: 530px;
+}
+
+.box-content p{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.box-content .bar{
+    border: 2px solid blueviolet;
+    padding: 5px ;
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: blueviolet; */
+}
+
+.box-content .bar span{
+    width: 100%;
+    height: 8px;
+    /* border: 2px solid blueviolet; */
+    /* padding:10px ; */
+    border-radius: 5px;
+    /* margin: 5px; */
+    background-color: blueviolet;
+    display: block;
+}
+
 .portfolio {
     width: 100vw;
     background-color: rgb(32, 30, 30);
@@ -392,5 +437,29 @@ section {
     
     section {
         padding: 10px;
+    }
+
+    .home-content {
+        width: 92vw;
+        padding: 90px 10px 20px;
+    }
+
+    .image {
+        height: 310px;
+        width: 310px;
+    }
+    
+    .about {
+        flex-direction: column-reverse;
+        /* height: 82vh; */
+    }
+    
+    .about-content {
+        width: 90vw;
+        margin-left: 0px;
+    }
+    
+    section  .about {
+        height: 82vh;
     }
 }
