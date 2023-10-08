@@ -1,9 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     text-decoration: none;
     scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
 }
 
 body {
@@ -245,10 +248,67 @@ padding: 90px;
     /* gap: 680px; */
 }
 
-.colunm{
+
+.colunm {
+    position: relative;
     border: 2px solid blueviolet;
     padding: 20px;
   width: 530px;
+  /* background-color: red; */
+}
+
+.Skills-container .colunm::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+}
+
+.colunm ::before .column:hover{
+    width: 100%;
+}
+.Skills-container .colunm:nth-child(1)  .box-content:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.Skills-container .colunm:nth-child(1) .box-content:nth-child(2) .bar span{
+    width: 90%;
+}
+
+.Skills-container .colunm:nth-child(1) .box-content:nth-child(3) .bar span{
+    width: 65%;
+}
+
+.Skills-container .colunm:nth-child(1) .box-content:nth-child(4) .bar span{
+    width: 85%;
+}
+
+.Skills-container .colunm:nth-child(1) .box-content:nth-child(5) .bar span{
+    width: 70%;
+}
+
+.Skills-container .colunm:nth-child(2) .box-content:nth-child(1) .bar span{
+    width: 80%;
+}
+
+.Skills-container .colunm:nth-child(2) .box-content:nth-child(2) .bar span{
+    width: 70%;
+}
+
+.Skills-container .colunm:nth-child(2) .box-content:nth-child(3) .bar span{
+    width: 60%;
+}
+
+.Skills-container .colunm:nth-child(2) .box-content:nth-child(4) .bar span{
+    width: 80%;
+}
+
+.Skills-container .colunm:nth-child(2) .box-content:nth-child(5) .bar span{
+    width: 90%;
 }
 
 .box-content p{
@@ -449,6 +509,9 @@ padding: 90px;
         width: 310px;
     }
     
+    .image img{
+        height: 350px;
+    }
     .about {
         flex-direction: column-reverse;
         /* height: 82vh; */
@@ -461,5 +524,30 @@ padding: 90px;
     
     section  .about {
         height: 82vh;
+    }
+
+    .colunm {
+        border-radius: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .skills{
+        padding: 20px;
+    }  
+    
+    .Contact {
+        min-height: 80vh;
+    }
+    .contact-form{
+        padding: 20px;
+    }
+    .contact-form textarea {
+        height: 200px;
+        width: 90%;
+    }
+
+    .contact-form input {
+        width: 90%;
     }
 }
